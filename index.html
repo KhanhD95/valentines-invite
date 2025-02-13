@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keila, Will You Be My Valentine?</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: pink;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        button {
+            font-size: 20px;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        .yes {
+            background-color: red;
+            color: white;
+        }
+        .no {
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Will you be my Valentine? ❤️</h1>
+        <div class="buttons">
+            <button class="yes" onclick="showLove()">Yes</button>
+            <button class="no" onclick="showSad()">No</button>
+        </div>
+        <div id="response" style="margin-top: 30px; font-size: 24px;"></div>
+    </div>
+    
+    <script>
+        function showLove() {
+            document.getElementById('response').innerHTML = "<h2>Yay! ❤️ I can't wait! 💕</h2><img src='https://media.giphy.com/media/3o7abKhOpu0NwenH3O/giphy.gif' alt='Happy GIF'>";
+        }
+        function showSad() {
+            document.getElementById('response').innerHTML = "<h2>Oh no! 😢 Just kidding, you don’t have a choice! 💖</h2><img src='https://media.giphy.com/media/26BRv0ThflsHCqDrG/giphy.gif' alt='Funny GIF'>";
+        }
+    </script>
+</body>
+</html>
